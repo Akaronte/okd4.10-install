@@ -1,0 +1,26 @@
+$TTL    604800
+@       IN      SOA     okd4-services.okd.local. admin.okd.local. (
+                  6     ; Serial
+             604800     ; Refresh
+              86400     ; Retry
+            2419200     ; Expire
+             604800     ; Negative Cache TTL
+)
+
+; name servers - NS records
+    IN      NS      okd4-services.okd.local.
+
+; name servers - PTR records
+2    IN    PTR    okd4-services.okd.local.
+
+; OpenShift Container Platform Cluster - PTR records
+3    IN    PTR    bootstrap.lab.okd.local.
+4    IN    PTR    master1.lab.okd.local.
+5    IN    PTR    master2.lab.okd.local.
+6    IN    PTR    master3.lab.okd.local.
+7    IN    PTR    worker1.lab.okd.local.
+8    IN    PTR    worker2.lab.okd.local.
+9    IN    PTR    worker3.lab.okd.local.
+10    IN    PTR    worker4.lab.okd.local.
+2    IN    PTR    api.lab.okd.local.
+2    IN    PTR    api-int.lab.okd.local.
