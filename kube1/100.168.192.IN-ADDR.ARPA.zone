@@ -1,5 +1,5 @@
 $TTL    604800
-@       IN      SOA     okd4-services.okd.piensoluegoinstalo.com. admin.okd.piensoluegoinstalo.com. (
+@       IN      SOA     okd4-services.kube1.okd.piensoluegoinstalo.com. admin.kube1.okd.piensoluegoinstalo.com. (
                   6     ; Serial
              604800     ; Refresh
               86400     ; Retry
@@ -8,10 +8,10 @@ $TTL    604800
 )
 
 ; name servers - NS records
-    IN      NS      okd4-services.okd.piensoluegoinstalo.com.
+    IN      NS      okd4-services.kube1.okd.piensoluegoinstalo.com.
 
 ; name servers - PTR records
-2    IN    PTR    okd4-services.okd.piensoluegoinstalo.com.
+2    IN    PTR    okd4-services.kube1.okd.piensoluegoinstalo.com.
 
 ; OpenShift Container Platform Cluster - PTR records
 3    IN    PTR    bootstrap.kube1.okd.piensoluegoinstalo.com.
