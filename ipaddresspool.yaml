@@ -1,0 +1,10 @@
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  namespace: metallb-system
+  name: kube1-ipool
+  labels: 
+    zone: kube1
+spec:
+  addresses:
+  - 192.168.100.100-192.168.100.200
